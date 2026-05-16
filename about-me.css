@@ -1,0 +1,186 @@
+/* Import vintage-style Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;500&display=swap');
+
+/* Reset default browser spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+  /* Soft warm vintage-inspired background */
+  background-color: #f3ede4;
+
+  /* Modern readable body font */
+  font-family: 'Inter', sans-serif;
+
+  color: #3b3128;
+
+  /* Makes section take up more screen space */
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px;
+}
+
+/* Main about section container */
+.about-container {
+
+  /* Warm cream panel color */
+  background-color: #fffaf3;
+
+  /* Make section much wider */
+  width: 95%;
+  max-width: 1300px;
+
+  border-radius: 24px;
+
+  /* More breathing room inside */
+  padding: 50px;
+
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  /* Soft elegant shadow */
+  box-shadow: 0 10px 30px rgba(60, 45, 30, 0.12);
+
+  /* Subtle border for vintage feel */
+  border: 1px solid #e2d6c3;
+}
+
+/* Profile image styling */
+.profile-image img {
+  width: 280px;
+  height: 280px;
+
+  object-fit: cover;
+
+  /* Circular image */
+  border-radius: 50%;
+
+  /* Warm border color */
+  border: 5px solid #d8c3a5;
+
+  /* Soft shadow around image */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Content area */
+.about-content {
+  flex: 1;
+}
+
+/* Heading styling */
+.about-content h1 {
+
+  /* Vintage serif font */
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 4rem;
+  font-weight: 700;
+
+  margin-bottom: 20px;
+
+  /* Deep warm brown */
+  color: #4b3425;
+
+  letter-spacing: 1px;
+}
+
+/* Bio paragraph styling */
+.about-content p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+
+  color: #5b4a3f;
+
+  margin-bottom: 30px;
+
+  max-width: 750px;
+}
+
+/* Skills container */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* Individual skill badge */
+.skill-tag {
+
+  /* Muted earthy tones */
+  background-color: #dcc5a3;
+
+  color: #4a3426;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+/* Slight hover effect */
+.skill-tag:hover {
+  transform: translateY(-2px);
+  background-color: #cfb18a;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+
+  /* Stack vertically on smaller screens */
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+
+    padding: 40px 30px;
+  }
+
+  /* Center skills */
+  .skills {
+    justify-content: center;
+  }
+
+  /* Smaller image for mobile */
+  .profile-image img {
+    width: 220px;
+    height: 220px;
+  }
+
+  /* Smaller heading size */
+  .about-content h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Extra small screen adjustments */
+@media (max-width: 500px) {
+
+  body {
+    padding: 20px;
+  }
+
+  .about-container {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .about-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+}
